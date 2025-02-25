@@ -1,0 +1,122 @@
+{
+    "Visual Studio Code - Time_Tracker_Project": {
+        "total_time": 30,
+        "sessions": [
+            {
+                "start": "10:00",
+                "end": "10:06"
+            }
+        ],
+        "date": "25-02-2025"
+    },
+    "Mozilla Firefox - Tu raci\u00f3n diaria de contenido random": {
+        "total_time": 10,
+        "sessions": [
+            {
+                "start": "10:00",
+                "end": "10:00"
+            }
+        ],
+        "date": "25-02-2025"
+    },
+    "Mozilla Firefox - ZonaTMO": {
+        "total_time": 10,
+        "sessions": [
+            {
+                "start": "10:00",
+                "end": "10:00"
+            }
+        ],
+        "date": "25-02-2025"
+    },
+    "WhatsApp - ": {
+        "total_time": 120,
+        "sessions": [
+            {
+                "start": "10:01",
+                "end": "10:02"
+            }
+        ],
+        "date": "25-02-2025"
+    },
+    " - ": {
+        "total_time": 10,
+        "sessions": [
+            {
+                "start": "10:03",
+                "end": "10:03"
+            }
+        ],
+        "date": "25-02-2025"
+    },
+    "Ofertas especiales - ": {
+        "total_time": 10,
+        "sessions": [
+            {
+                "start": "10:03",
+                "end": "10:03"
+            }
+        ],
+        "date": "25-02-2025"
+    },
+    "Steam - ": {
+        "total_time": 10,
+        "sessions": [
+            {
+                "start": "10:03",
+                "end": "10:03"
+            }
+        ],
+        "date": "25-02-2025"
+    },
+    "Potion Craft - ": {
+        "total_time": 60,
+        "sessions": [
+            {
+                "start": "10:03",
+                "end": "10:04"
+            }
+        ],
+        "date": "25-02-2025"
+    },
+    "Mozilla Firefox - YouTube": {
+        "total_time": 50,
+        "sessions": [
+            {
+                "start": "10:04",
+                "end": "10:05"
+            }
+        ],
+        "date": "25-02-2025"
+    },
+    "File Explorer - Telegram Desktop": {
+        "total_time": 10,
+        "sessions": [
+            {
+                "start": "10:05",
+                "end": "10:05"
+            }
+        ],
+        "date": "25-02-2025"
+    },
+    "\u200eSaved Messages \u2013 (33) - ": {
+        "total_time": 10,
+        "sessions": [
+            {
+                "start": "10:05",
+                "end": "10:05"
+            }
+        ],
+        "date": "25-02-2025"
+    },
+    "System tray overflow window. - ": {
+        "total_time": 10,
+        "sessions": [
+            {
+                "start": "10:05",
+                "end": "10:05"
+            }
+        ],
+        "date": "25-02-2025"
+    }
+}
