@@ -1,0 +1,67 @@
+#tracker
+import psutil
+import pygetwindow as gw
+import win32process
+import time
+import win32gui
+import re
+from datetime import datetime
+#from selenium import webdriver
+        
+def active_win_open():
+    """This function aims to get the pid of the active window and give back the name of the program running"""
+    pattern_middle= '([^\|\-—]+)\s*(?:\||-|—)\s*[^\-—]+$'
+    pattern_program= "(.+?)\s*(?:-|—)\s*(.+)"
+    hwnd_activo = gw.getActiveWindow()._hWnd 
+    if hwnd_activo:
+        active_pid= win32process.GetWindowThreadProcessId(hwnd_activo)[1]
+        print(win32gui.GetWindowText(hwnd_activo))
+        for proc in psutil.process_iter(['pid', 'name']):
+            if proc.info['pid']== active_pid:
+                #if proc.info['name'] == 'firefox.exe':
+                    long_page=win32gui.GetWindowText(hwnd_activo) #this line give something like tracker.py - Monitor - Visual Studio Code
+                    center_prog= re.search(pattern_middle, long_page) #this gathers Monitor - Visual Studio Code
+                    try:mid_info= center_prog[1] # group 1 normally is Monitor
+                    except: a=0
+                    last_part= re.search(pattern_program, mid_info) #here we try to gather the last part after - or — "Visual Studio Code"
+                    program= last_part[2] #that ends in the group 2
+                    if mid_info:
+                        return mid_info, program
+                    return None,program
+                    
+                    
+                #return proc.info['name']
+            
+    
+    
+    return None      
+
+data_to_store= {}
+run= True
+while run:
+    today_date= datetime.today().strftime('%d-%m-%Y')
+    now= datetime.today().strftime('%H:%M')
+    sleeping_time=10
+    time.sleep(sleeping_time)
+    project,program=active_win_open()
+    if project:
+        name= f'{program}'-{project}'
+    name= program
+    if data_to_store.get(name):
+        data_to_store[name]['total_time'] +=10
+    else:
+        data_to_store.update({
+            name:{
+                'total_time':10,
+                'sessions':[{'start':now,
+                             'end':now 
+                             }],
+                'date': today_date
+            }
+        })
+    
+        
+  
+    
+    
+    
