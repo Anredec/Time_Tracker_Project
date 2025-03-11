@@ -23,12 +23,15 @@ def active_win_open():
             match = re.search(pattern, window_title)
             if match:
                 middle_part = match.group(1).strip()  # Extracts the middle part
+                if "Coursera" in middle_part: middle_part= "Coursera"
                 final_part = match.group(2).strip()  # Extracts the last part
             else:
                 middle_part = ""
                 final_part = window_title.strip()  # If no match, assume it's a standalone program
             if "overflow" in final_part:
                 final_part= proc.info['name']
+            elif final_part == '"' or final_part == "":
+                final_part= proc.info['name']                
             
             return middle_part, final_part
     

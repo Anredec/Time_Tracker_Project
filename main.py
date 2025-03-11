@@ -4,42 +4,56 @@ import threading
 from active_window import active_win_open
 import time
 import sqlite3
-
+from old_data_check import check_old_data
 
 def save_data_to_file():
     """Saves the current tracking data to a text file every 1 minute."""
-    with open("tracker_log.txt", "w", encoding="utf-8") as file:
-        json.dump(data_to_store, file, indent=4)  # Save in JSON format for readability
+    with open(f"tracker_log_{datetime.today().strftime('%d-%m-%Y')}.txt", "w", encoding="utf-8") as file:
+        file.write("program,project,date,total_time,start_time,end_time\n")
+        for y in data_to_store:
+            file.write(f"{data_to_store[y]['pro_name']},"
+                       f"{data_to_store[y]['pro_seg']},"
+                       f"{data_to_store[y]['date']},"
+                       f"{data_to_store[y]['total_time']},"
+                       f"{data_to_store[y]['start']},"
+                       f"{data_to_store[y]['end']}\n")
+        #json.dump(data_to_store, file, indent=4)  # Save in JSON format for readability
     print("Data saved to tracker_log.txt")  # Debugging message
 
 
 def save_data_sqlite():
     '''Saves the current tracking data to a sqlite file every 1 minute.'''
-    
-    database_sql= conn.cursor()
-    #checking existing entries
-    for i in data_to_store:
-        
-        database_sql.execute('''
-                     SELECT total_time from usage_tracking
-                     WHERE program= ? AND project= ? AND date= ?;
-                     ''',(data_to_store[i]['pro_name'], data_to_store[i]['pro_seg'], data_to_store[i]['date']))
-    
-        #if the record exist
-        result= database_sql.fetchone()
-        if result:
-            #if there is previous record -update
+    #opening sqlite
+    with sqlite3.connect('tracker.db') as conn:  
+        database_sql = conn.cursor()
+        #checking if the information is already in the db
+        for i in data_to_store:
             database_sql.execute('''
+                SELECT total_time FROM usage_tracking
+                WHERE program= ? AND project= ? AND date= ?;
+            ''', (data_to_store[i]['pro_name'], data_to_store[i]['pro_seg'], data_to_store[i]['date']))
+    
+            result = database_sql.fetchone()
+            
+            if result:
+                # Update existing entry
+                database_sql.execute('''
                     UPDATE usage_tracking
                     SET total_time= ?, end_time= ?
                     WHERE program= ? AND project= ? AND date= ?;
-                    ''',(data_to_store[i]['total_time'], data_to_store[i]['end'], data_to_store[i]['pro_name'],data_to_store[i]['pro_seg'], data_to_store[i]['date']))
-        else:
-            #if there is not previous record -save new row
-            database_sql.execute('''
-                         INSERT  INTO usage_tracking(program, project, date, total_time, start_time, end_time)
-                         VALUES (?,?,?,?,?,?);''',(data_to_store[i]['pro_name'],data_to_store[i]['pro_seg'],data_to_store[i]['date'],data_to_store[i]['total_time'],data_to_store[i]['start'], data_to_store[i]['end']))
-    conn.commit()
+                ''', (data_to_store[i]['total_time'], data_to_store[i]['end'], 
+                      data_to_store[i]['pro_name'], data_to_store[i]['pro_seg'], data_to_store[i]['date']))
+            else:
+                # Insert new entry
+                database_sql.execute('''
+                    INSERT INTO usage_tracking(program, project, date, total_time, start_time, end_time)
+                    VALUES (?,?,?,?,?,?);
+                ''', (data_to_store[i]['pro_name'], data_to_store[i]['pro_seg'], data_to_store[i]['date'],
+                      data_to_store[i]['total_time'], data_to_store[i]['start'], data_to_store[i]['end']))
+
+        conn.commit()  # Ensure changes are saved
+        print("SQLite Saved")
+
     
 
 
@@ -74,8 +88,12 @@ database_sql.executescript('''
 conn.commit()
 
 
+#checking if data is stored already today
+data_to_store= check_old_data()
 # Start auto-saving when the program starts
 auto_save()
+
+
 try:
     while run:
         today_date = datetime.today().strftime('%d-%m-%Y')
