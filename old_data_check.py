@@ -4,17 +4,15 @@ import pandas as pd
 import os
 import sqlite3
 
-def check_old_data():
-    path_how_to = Path("to_check.txt")
-
-    # Read whether we are using SQL or TXT
-    with open(path_how_to, "r") as file:
-        version = file.read().strip()  # Strip newline characters
+def check_old_data(version):
+    
 
     today = datetime.today().strftime('%d-%m-%Y')
     
-    if version == "txt":
-        my_file = Path(f"D:/Andres/Documentos/GitHub/Time_Tracker_Project/data/tracker_log_{today}.txt")
+    if version == "CSV":
+        folder_name= "data"
+        
+        my_file = Path(os.path.join(folder_name, f"tracker_log_{today}.csv"))
 
         if my_file.exists():
             df = pd.read_csv(my_file)
@@ -35,7 +33,7 @@ def check_old_data():
             print("Data not found")
             return {}
 
-    elif version == "sql":
+    elif version == "SQL":
         try:
             with sqlite3.connect('tracker.db') as conn:  
                 database_sql = conn.cursor()

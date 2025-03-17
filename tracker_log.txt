@@ -1,12 +1,466 @@
 {
     "Visual Studio Code - Time_Tracker_Project": {
+        "total_time": 40,
+        "start": "10:36",
+        "end": "11:59",
+        "date": "03-03-2025",
+        "pro_name": "Visual Studio Code",
+        "pro_seg": "Time_Tracker_Project"
+    },
+    "Mozilla Firefox - Data Skills for Lab Techs": {
+        "total_time": 90,
+        "start": "10:36",
+        "end": "11:01",
+        "date": "03-03-2025",
+        "pro_name": "Mozilla Firefox",
+        "pro_seg": "Data Skills for Lab Techs"
+    },
+    "Word - CV harvard base": {
+        "total_time": 880,
+        "start": "10:37",
+        "end": "11:24",
+        "date": "03-03-2025",
+        "pro_name": "Word",
+        "pro_seg": "CV harvard base"
+    },
+    "Mozilla Firefox - IMIBIC": {
+        "total_time": 230,
+        "start": "10:38",
+        "end": "11:57",
+        "date": "03-03-2025",
+        "pro_name": "Mozilla Firefox",
+        "pro_seg": "IMIBIC"
+    },
+    "Save As - ": {
+        "total_time": 40,
+        "start": "10:38",
+        "end": "11:24",
+        "date": "03-03-2025",
+        "pro_name": "Save As",
+        "pro_seg": ""
+    },
+    "Title - ": {
         "total_time": 10,
-        "sessions": [
-            {
-                "start": "20:28",
-                "end": "20:28"
-            }
-        ],
-        "date": "02-03-2025"
+        "start": "10:38",
+        "end": "10:38",
+        "date": "03-03-2025",
+        "pro_name": "Title",
+        "pro_seg": ""
+    },
+    "Word - Document1": {
+        "total_time": 770,
+        "start": "10:38",
+        "end": "11:24",
+        "date": "03-03-2025",
+        "pro_name": "Word",
+        "pro_seg": "Document1"
+    },
+    "Outlook - Shipment 10574: Andr\u00e9s Delgado Campos": {
+        "total_time": 10,
+        "start": "10:39",
+        "end": "10:39",
+        "date": "03-03-2025",
+        "pro_name": "Outlook",
+        "pro_seg": "Shipment 10574: Andr\u00e9s Delgado Campos"
+    },
+    " - ": {
+        "total_time": 30,
+        "start": "10:47",
+        "end": "11:52",
+        "date": "03-03-2025",
+        "pro_name": "",
+        "pro_seg": ""
+    },
+    "Mozilla Firefox - ": {
+        "total_time": 60,
+        "start": "10:50",
+        "end": "11:49",
+        "date": "03-03-2025",
+        "pro_name": "Mozilla Firefox",
+        "pro_seg": ""
+    },
+    "Mozilla Firefox - tecnicas de estres oxidativo at DuckDuckGo": {
+        "total_time": 30,
+        "start": "10:50",
+        "end": "10:51",
+        "date": "03-03-2025",
+        "pro_name": "Mozilla Firefox",
+        "pro_seg": "tecnicas de estres oxidativo at DuckDuckGo"
+    },
+    "Mozilla Firefox - how to perform an oxidase test at DuckDuckGo": {
+        "total_time": 20,
+        "start": "10:51",
+        "end": "10:51",
+        "date": "03-03-2025",
+        "pro_name": "Mozilla Firefox",
+        "pro_seg": "how to perform an oxidase test at DuckDuckGo"
+    },
+    "Mozilla Firefox - how to perform an oxidase stress test at DuckDuckGo": {
+        "total_time": 10,
+        "start": "10:51",
+        "end": "10:51",
+        "date": "03-03-2025",
+        "pro_name": "Mozilla Firefox",
+        "pro_seg": "how to perform an oxidase stress test at DuckDuckGo"
+    },
+    "Mozilla Firefox - Principle, Uses, Procedure, Types, Result Interpretation...": {
+        "total_time": 20,
+        "start": "10:51",
+        "end": "10:51",
+        "date": "03-03-2025",
+        "pro_name": "Mozilla Firefox",
+        "pro_seg": "Principle, Uses, Procedure, Types, Result Interpretation..."
+    },
+    "Mozilla Firefox - how to test for oxidative stress at DuckDuckGo": {
+        "total_time": 10,
+        "start": "10:52",
+        "end": "10:52",
+        "date": "03-03-2025",
+        "pro_name": "Mozilla Firefox",
+        "pro_seg": "how to test for oxidative stress at DuckDuckGo"
+    },
+    "Mozilla Firefox - bars at DuckDuckGo": {
+        "total_time": 20,
+        "start": "10:52",
+        "end": "11:01",
+        "date": "03-03-2025",
+        "pro_name": "Mozilla Firefox",
+        "pro_seg": "bars at DuckDuckGo"
+    },
+    "Mozilla Firefox - PMC": {
+        "total_time": 150,
+        "start": "10:55",
+        "end": "11:03",
+        "date": "03-03-2025",
+        "pro_name": "Mozilla Firefox",
+        "pro_seg": "PMC"
+    },
+    "File Explorer - Downloads": {
+        "total_time": 150,
+        "start": "10:57",
+        "end": "11:53",
+        "date": "03-03-2025",
+        "pro_name": "File Explorer",
+        "pro_seg": "Downloads"
+    },
+    "File Explorer - a_SOP": {
+        "total_time": 20,
+        "start": "10:57",
+        "end": "11:25",
+        "date": "03-03-2025",
+        "pro_name": "File Explorer",
+        "pro_seg": "a_SOP"
+    },
+    "Mozilla Firefox - Reactive Oxygen Species espa\u00f1ol at DuckDuckGo": {
+        "total_time": 10,
+        "start": "11:02",
+        "end": "11:02",
+        "date": "03-03-2025",
+        "pro_name": "Mozilla Firefox",
+        "pro_seg": "Reactive Oxygen Species espa\u00f1ol at DuckDuckGo"
+    },
+    "WhatsApp - ": {
+        "total_time": 450,
+        "start": "11:07",
+        "end": "11:57",
+        "date": "03-03-2025",
+        "pro_name": "WhatsApp",
+        "pro_seg": ""
+    },
+    "\u200eCarrasco \u2013 (856) - ": {
+        "total_time": 90,
+        "start": "11:11",
+        "end": "11:13",
+        "date": "03-03-2025",
+        "pro_name": "\u200eCarrasco \u2013 (856)",
+        "pro_seg": ""
+    },
+    "(1) \u200eCarrasco \u2013 (857) - ": {
+        "total_time": 10,
+        "start": "11:12",
+        "end": "11:12",
+        "date": "03-03-2025",
+        "pro_name": "(1) \u200eCarrasco \u2013 (857)",
+        "pro_seg": ""
+    },
+    "Microsoft Word - ": {
+        "total_time": 10,
+        "start": "11:15",
+        "end": "11:15",
+        "date": "03-03-2025",
+        "pro_name": "Microsoft Word",
+        "pro_seg": ""
+    },
+    "Mozilla Firefox - YouTube": {
+        "total_time": 530,
+        "start": "11:17",
+        "end": "11:41",
+        "date": "03-03-2025",
+        "pro_name": "Mozilla Firefox",
+        "pro_seg": "YouTube"
+    },
+    "Adobe Acrobat Pro DC - para imibic.pdf": {
+        "total_time": 10,
+        "start": "11:24",
+        "end": "11:24",
+        "date": "03-03-2025",
+        "pro_name": "Adobe Acrobat Pro DC",
+        "pro_seg": "para imibic.pdf"
+    },
+    "Carga de archivos - ": {
+        "total_time": 20,
+        "start": "11:25",
+        "end": "11:26",
+        "date": "03-03-2025",
+        "pro_name": "Carga de archivos",
+        "pro_seg": ""
+    },
+    "File Explorer - cartas": {
+        "total_time": 30,
+        "start": "11:25",
+        "end": "11:56",
+        "date": "03-03-2025",
+        "pro_name": "File Explorer",
+        "pro_seg": "cartas"
+    },
+    "File Explorer - Telegram Desktop": {
+        "total_time": 60,
+        "start": "11:26",
+        "end": "11:44",
+        "date": "03-03-2025",
+        "pro_name": "File Explorer",
+        "pro_seg": "Telegram Desktop"
+    },
+    "File Explorer - Trabajo Investigo": {
+        "total_time": 10,
+        "start": "11:27",
+        "end": "11:27",
+        "date": "03-03-2025",
+        "pro_name": "File Explorer",
+        "pro_seg": "Trabajo Investigo"
+    },
+    "Outlook - Correo: Andr\u00e9s Delgado Campos": {
+        "total_time": 320,
+        "start": "11:27",
+        "end": "11:59",
+        "date": "03-03-2025",
+        "pro_name": "Outlook",
+        "pro_seg": "Correo: Andr\u00e9s Delgado Campos"
+    },
+    "Warning: this site can see edits you make - ": {
+        "total_time": 10,
+        "start": "11:28",
+        "end": "11:28",
+        "date": "03-03-2025",
+        "pro_name": "Warning: this site can see edits you make",
+        "pro_seg": ""
+    },
+    "Mozilla Firefox - Unir PDF online | Combina tus archivos PDF en uno": {
+        "total_time": 20,
+        "start": "11:29",
+        "end": "11:29",
+        "date": "03-03-2025",
+        "pro_name": "Mozilla Firefox",
+        "pro_seg": "Unir PDF online | Combina tus archivos PDF en uno"
+    },
+    "Mozilla Firefox - para imibic_merged.pdf": {
+        "total_time": 10,
+        "start": "11:29",
+        "end": "11:29",
+        "date": "03-03-2025",
+        "pro_name": "Mozilla Firefox",
+        "pro_seg": "para imibic_merged.pdf"
+    },
+    "\u200eMonica Carrasco \u2013 (863) - ": {
+        "total_time": 20,
+        "start": "11:30",
+        "end": "11:30",
+        "date": "03-03-2025",
+        "pro_name": "\u200eMonica Carrasco \u2013 (863)",
+        "pro_seg": ""
+    },
+    "\u200eMonica Carrasco \u2013 (864) - ": {
+        "total_time": 80,
+        "start": "11:30",
+        "end": "11:32",
+        "date": "03-03-2025",
+        "pro_name": "\u200eMonica Carrasco \u2013 (864)",
+        "pro_seg": ""
+    },
+    "\u200eSaved Messages \u2013 (872) - ": {
+        "total_time": 30,
+        "start": "11:40",
+        "end": "11:40",
+        "date": "03-03-2025",
+        "pro_name": "\u200eSaved Messages \u2013 (872)",
+        "pro_seg": ""
+    },
+    "Mozilla Firefox - Cardmarket: Compraventa online de cartas Magic: The Gathering": {
+        "total_time": 10,
+        "start": "11:41",
+        "end": "11:41",
+        "date": "03-03-2025",
+        "pro_name": "Mozilla Firefox",
+        "pro_seg": "Cardmarket: Compraventa online de cartas Magic: The Gathering"
+    },
+    "\u200eMonica Carrasco \u2013 (872) - ": {
+        "total_time": 50,
+        "start": "11:41",
+        "end": "11:43",
+        "date": "03-03-2025",
+        "pro_name": "\u200eMonica Carrasco \u2013 (872)",
+        "pro_seg": ""
+    },
+    "TelegramDesktop - ": {
+        "total_time": 10,
+        "start": "11:43",
+        "end": "11:43",
+        "date": "03-03-2025",
+        "pro_name": "TelegramDesktop",
+        "pro_seg": ""
+    },
+    "\u200eMonica Carrasco \u2013 (873) - ": {
+        "total_time": 40,
+        "start": "11:44",
+        "end": "11:44",
+        "date": "03-03-2025",
+        "pro_name": "\u200eMonica Carrasco \u2013 (873)",
+        "pro_seg": ""
+    },
+    "File Explorer - My Passport (F:)": {
+        "total_time": 10,
+        "start": "11:45",
+        "end": "11:45",
+        "date": "03-03-2025",
+        "pro_name": "File Explorer",
+        "pro_seg": "My Passport (F:)"
+    },
+    "File Explorer - CV": {
+        "total_time": 20,
+        "start": "11:45",
+        "end": "11:45",
+        "date": "03-03-2025",
+        "pro_name": "File Explorer",
+        "pro_seg": "CV"
+    },
+    "File Explorer - Titulos": {
+        "total_time": 60,
+        "start": "11:45",
+        "end": "11:51",
+        "date": "03-03-2025",
+        "pro_name": "File Explorer",
+        "pro_seg": "Titulos"
+    },
+    "Mozilla Firefox - iLovePDF | Online PDF tools for PDF lovers": {
+        "total_time": 10,
+        "start": "11:45",
+        "end": "11:45",
+        "date": "03-03-2025",
+        "pro_name": "Mozilla Firefox",
+        "pro_seg": "iLovePDF | Online PDF tools for PDF lovers"
+    },
+    "Adobe Acrobat Pro DC - Certificate.pdf": {
+        "total_time": 10,
+        "start": "11:46",
+        "end": "11:46",
+        "date": "03-03-2025",
+        "pro_name": "Adobe Acrobat Pro DC",
+        "pro_seg": "Certificate.pdf"
+    },
+    "Alerta de p\u00e1gina digitalizada - ": {
+        "total_time": 10,
+        "start": "11:47",
+        "end": "11:47",
+        "date": "03-03-2025",
+        "pro_name": "Alerta de p\u00e1gina digitalizada",
+        "pro_seg": ""
+    },
+    "Adobe Acrobat Pro DC - titulos unidos informatica.pdf": {
+        "total_time": 10,
+        "start": "11:47",
+        "end": "11:47",
+        "date": "03-03-2025",
+        "pro_name": "Adobe Acrobat Pro DC",
+        "pro_seg": "titulos unidos informatica.pdf"
+    },
+    "Mozilla Firefox - iMedidata | Login": {
+        "total_time": 10,
+        "start": "11:47",
+        "end": "11:47",
+        "date": "03-03-2025",
+        "pro_name": "Mozilla Firefox",
+        "pro_seg": "iMedidata | Login"
+    },
+    "Importante trabajo.txt: Bloc de notas - ": {
+        "total_time": 10,
+        "start": "11:48",
+        "end": "11:48",
+        "date": "03-03-2025",
+        "pro_name": "Importante trabajo.txt: Bloc de notas",
+        "pro_seg": ""
+    },
+    "Mozilla Firefox - iMedidata": {
+        "total_time": 100,
+        "start": "11:48",
+        "end": "11:50",
+        "date": "03-03-2025",
+        "pro_name": "Mozilla Firefox",
+        "pro_seg": "iMedidata"
+    },
+    "Guardar como - ": {
+        "total_time": 20,
+        "start": "11:49",
+        "end": "11:51",
+        "date": "03-03-2025",
+        "pro_name": "Guardar como",
+        "pro_seg": ""
+    },
+    "Mozilla Firefox - certificate.pdf": {
+        "total_time": 10,
+        "start": "11:50",
+        "end": "11:50",
+        "date": "03-03-2025",
+        "pro_name": "Mozilla Firefox",
+        "pro_seg": "certificate.pdf"
+    },
+    "Mozilla Firefox - Merge PDF files online. Free service to merge PDF": {
+        "total_time": 40,
+        "start": "11:51",
+        "end": "11:52",
+        "date": "03-03-2025",
+        "pro_name": "Mozilla Firefox",
+        "pro_seg": "Merge PDF files online. Free service to merge PDF"
+    },
+    "Mozilla Firefox - 1.pdf": {
+        "total_time": 10,
+        "start": "11:53",
+        "end": "11:53",
+        "date": "03-03-2025",
+        "pro_name": "Mozilla Firefox",
+        "pro_seg": "1.pdf"
+    },
+    "File Explorer - Desktop": {
+        "total_time": 10,
+        "start": "11:56",
+        "end": "11:56",
+        "date": "03-03-2025",
+        "pro_name": "File Explorer",
+        "pro_seg": "Desktop"
+    },
+    "Mozilla Firefox - NIF at DuckDuckGo": {
+        "total_time": 10,
+        "start": "11:58",
+        "end": "11:58",
+        "date": "03-03-2025",
+        "pro_name": "Mozilla Firefox",
+        "pro_seg": "NIF at DuckDuckGo"
+    },
+    "Mozilla Firefox - Las diferencias entre DNI, NIF o NIE en Espa\u00f1a": {
+        "total_time": 30,
+        "start": "11:58",
+        "end": "11:58",
+        "date": "03-03-2025",
+        "pro_name": "Mozilla Firefox",
+        "pro_seg": "Las diferencias entre DNI, NIF o NIE en Espa\u00f1a"
     }
 }

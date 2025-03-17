@@ -26,13 +26,14 @@ def active_win_open():
                 if "Coursera" in middle_part: middle_part= "Coursera"
                 final_part = match.group(2).strip()  # Extracts the last part
             else:
-                middle_part = ""
+                middle_part = " "
                 final_part = window_title.strip()  # If no match, assume it's a standalone program
             if "overflow" in final_part:
                 final_part= proc.info['name']
             elif final_part == '"' or final_part == "":
                 final_part= proc.info['name']                
-            
+            if "," in middle_part:
+                middle_part= middle_part.replace(",", " ")
             return middle_part, final_part
     
     return None, None  # Return None if nothing found
