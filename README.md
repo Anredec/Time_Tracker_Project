@@ -1,66 +1,60 @@
-# Time Tracker Project
+# Time Tracker
 
-## Overview
-This project is a Python-based time tracker that monitors which program you are actively using. If you are using Firefox, it will also track which webpage you are on. The program will log data every 5 minutes and generate visual graphs showing time spent on different applications/webpages.
+## Project Overview
 
-## Features
-- Detect which program is currently active.
-- If using Firefox, extract the current webpage URL.
-- Track the time spent in each program or webpage.
-- Log data into a CSV file or MySQL database every 5 minutes.
-- Generate graphs summarizing daily and weekly usage.
-- Optional UI (to be determined later).
-
-## Technologies Used
-- **Active Window Detection**: `psutil`, `pygetwindow`, `pywinctl`
-- **Firefox Page Tracking**: `win32gui`, `xdotool` (Linux), or `browser API`
-- **Time Tracking**: `datetime`, `schedule`
-- **Data Storage**: `csv`, `MySQL (mysql-connector-python)`
-- **Graph Generation**: `matplotlib`, `pandas`
-- **Optional UI**: `tkinter`, `PyQt`, or `streamlit`
+Time Tracker is a Python-based application that monitors the time spent on different programs and projects. It automatically logs active windows, saves the data, and provides visual reports.
 
 ## Project Structure
-```
-/time-tracker
-│-- tracker.py          # Main script for tracking and logging data
-│-- data_handler.py     # Handles saving data to CSV/MySQL
-│-- graph_generator.py  # Generates daily/weekly graphs
-│-- README.txt          # To-do list and documentation
-│-- requirements.txt    # List of dependencies
-│-- config.py           # Configuration file (database settings, interval settings, etc.)
-│-- logs/               # Folder to store CSV logs (if not using MySQL)
-```
 
-## To-Do List
-### Phase 1: Basic Tracking
-- [ ] Detect which program is currently active
-- [ ] Track time spent per program
-- [ ] If using Firefox, extract the active webpage
-- [ ] Store recorded data in memory
+- **main.py**: Entry point that initializes and runs the GUI.
+- **gui.py**: Manages the graphical interface using Tkinter.
+- **active\_window\.py**: Detects the currently active window.
+- **save\_module.py**: Handles saving data to CSV and SQLite.
+- **graph\_function.py**: Generates graphical reports of tracked time.
+- **old\_data\_check.py**: Checks for previously stored session data.
+- **tracker.db**: SQLite database for storing usage data (if SQL mode is selected).
 
-### Phase 2: Data Logging
-- [ ] Save the data to a CSV file
-- [ ] Add support for MySQL storage
-- [ ] Automate data logging every 5 minutes
+## How It Works
 
-### Phase 3: Data Visualization
-- [ ] Generate a daily usage graph
-- [ ] Implement a weekly usage graph
-- [ ] Display graphs before closing the program
+1. The user starts tracking, and the application records the active window every 10 seconds.
+2. The recorded data includes the program name, project name, start time, end time, and total time spent.
+3. The user can choose to save data as CSV or in an SQLite database.
+4. The user can generate graphs to visualize usage for different time periods.
 
-### Phase 4: Optional Enhancements
-- [ ] Decide whether a UI is needed
-- [ ] Add real-time tracking visualization
-- [ ] Implement additional features (e.g., productivity analysis)
+## Installation Guide
 
-## Next Steps
-1. Set up a Python environment and install necessary libraries.
-2. Start with detecting active applications.
-3. Implement Firefox webpage tracking.
-4. Develop a basic CSV logging system.
-5. Expand to MySQL if needed.
-6. Work on graph generation.
+### Prerequisites
 
----
-This document will be updated as the project progresses. Happy coding!
+- Python 3.8 or later
+- Required dependencies (Tkinter, Pandas, Matplotlib, SQLite3)
+
+### Installation Steps
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Anredec/Time_Tracker_Project.git
+   cd time-tracker
+   ```
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Run the application:
+   ```bash
+   python main.py
+   ```
+
+## Usage
+
+1. Select a save format (CSV/SQL).
+2. Click **Start** to begin tracking.
+3. Click **Stop** to save and stop tracking.
+4. Choose a time period and click **Show Graph** to view data.
+
+## Future Improvements
+
+- Custom time intervals for tracking
+- Export options (PDF, Excel)
+- Advanced filtering and report generation
+
 
