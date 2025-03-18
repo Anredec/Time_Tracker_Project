@@ -5,7 +5,7 @@ import time
 from datetime import datetime
 from active_window import active_win_open
 from save_module import save_data_sqlite, save_data_to_file
-from graph_function import graph_maker, df_search_csv
+from graph_function import graph_maker, df_search_csv, df_search_sql
 from old_data_check import check_old_data
 import sqlite3
 
@@ -153,16 +153,30 @@ class TimeTrackerGUI:
 
     def show_graph(self):
         """Displays a graph based on selected type"""
-        graph_choice = self.graph_type.get()
-        if graph_choice:
-            df, vers, total_time = df_search_csv(graph_choice.lower().replace(" ", "_"))
-            if df is not None:
-                graph_maker(df, vers, total_time)
+        format_choice = self.save_type.get()
+        if format_choice =="CSV":
+            graph_choice = self.graph_type.get()
+            if graph_choice:
+                df, vers, total_time = df_search_csv(graph_choice.lower().replace(" ", "_"))
+                if df is not None:
+                    graph_maker(df, vers, total_time)
+                else:
+                    messagebox.showerror("Error", "No data available for this period.")
             else:
-                messagebox.showerror("Error", "No data available for this period.")
-        else:
-            messagebox.showerror("Error", "Please select a graph type.")
+                messagebox.showerror("Error", "Please select a graph type.")
+        elif format_choice == "SQL":
+            graph_choice = self.graph_type.get()
+            if graph_choice:
+                df, vers, total_time = df_search_sql(graph_choice.lower().replace(" ", "_"))
             
+                if df is not None:
+                    graph_maker(df, vers, total_time)
+                else:
+                    messagebox.showerror("Error", "No data available for this period.")
+            else:
+                messagebox.showerror("Error", "Please select a graph type.")
+        else:
+            messagebox.showerror("Error", "Please select where is your data saved")
             
     def on_closing(self):
         if messagebox.askyesno(title="Quit?", message="Do you wish to quit?"):
